@@ -1,0 +1,29 @@
+spring :
+  application :
+    name : userdetailservice
+  context :
+    url: '/userdetailservice'
+  #DB Configuration
+  jpa:
+    database : mysql
+    show-sql: true
+    hibernate:
+      ddl-auto : update
+      default_schema : ecommerce_userdb
+    #properties :
+     #   hibernate.jdbc.batch_size: 20
+     #   hibernate.cache.use_query_cache: false
+     #   hibernate.cache.use_second_level_cache: false
+     #   hibernate.cache.use_structured_entries: false
+     #   hibernate.cache.use_minimal_puts: false
+  datasource :
+    platform : mysql
+    url : jdbc:mysql://localhost:3306/ecommerce_userdb
+    username : root
+    #TODO password should be encrypted need to find other ways to configure security credentials
+    password : Dilip@mysql12
+    driverClassName : com.mysql.cj.jdbc.Driver
+    hikari :
+      schema : ecommerce_userdb
+
+
