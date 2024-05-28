@@ -2,9 +2,6 @@ package com.ecommerce.user.userdetailservice.mapper;
 
 import com.ecommerce.user.userdetailservice.dto.AddressDto;
 import com.ecommerce.user.userdetailservice.entity.Address;
-import org.springframework.stereotype.Component;
-
-@Component
 public class AddressMapper {
 
     public static AddressDto mapToAddressDto(Address address, AddressDto addressDto) {
